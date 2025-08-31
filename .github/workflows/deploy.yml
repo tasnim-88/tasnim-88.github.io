@@ -21,7 +21,6 @@ jobs:
         token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
         submodules: recursive
 
-
       - name: Install APT packages (ImageMagick)
         run: |
           sudo apt-get update
@@ -67,4 +66,3 @@ jobs:
           personal_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
           publish_dir: ./_site
           publish_branch: gh-pages
-

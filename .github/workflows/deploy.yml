@@ -3,10 +3,10 @@ name: Build and deploy Jekyll site to GitHub Pages
 on:
   push:
     branches:
-      - main    # change if your default branch is 'master' etc.
+      - main   # change if your default branch is 'master' etc.
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -60,6 +60,8 @@ jobs:
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Prefer the PAT secret (set secret at repo level). If you do not set this secret,
+          # the action will try to use GITHUB_TOKEN; but if GITHUB_TOKEN lacks permission use the PAT.
+          personal_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
           publish_dir: ./_site
           publish_branch: gh-pages

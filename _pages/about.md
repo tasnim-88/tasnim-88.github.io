@@ -29,10 +29,9 @@ latest_posts:
 ---
 
 Hi there! 👋
-I am Tasnim. A computer science student and a patient learner. Currently I am learning web development. I also have a keen interest in cybersecurity. 
+I am Tasnim. A computer science student and a patient learner. Currently I am learning web development. I also have a keen interest in cybersecurity.
 
 🎨I like to do art and animation as well. 💻I love to build new staff in my spare time.
-
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
